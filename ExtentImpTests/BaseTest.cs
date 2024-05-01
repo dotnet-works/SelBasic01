@@ -24,7 +24,9 @@ public class BaseTest{
     [SetUp]
     public void InitSetUp(){
         ExtentTestManager.CreateTest(TestContext.CurrentContext.Test.Name);
-        driver = new ChromeDriver();
+        ChromeOptions _chromeOptions = new ChromeOptions();
+        _chromeOptions.AddArgument("--headless");
+        driver = new ChromeDriver(_chromeOptions);
         driver.Navigate().GoToUrl("https://www.amazon.in/");
         driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromMilliseconds(2500);
         driver.Manage().Window.Maximize();
