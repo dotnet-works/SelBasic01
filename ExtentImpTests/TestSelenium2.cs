@@ -19,7 +19,7 @@ public class TestSelenium2 :BaseTest {
 
     [Test]
     public void Test2(){
-        
+        Console.WriteLine("Hello Joy");
     }
 
 
