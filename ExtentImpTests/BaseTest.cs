@@ -25,6 +25,9 @@ public class BaseTest{
     public void InitSetUp(){
         ExtentTestManager.CreateTest(TestContext.CurrentContext.Test.Name);
         ChromeOptions _chromeOptions = new ChromeOptions();
+        _chromeOptions.AddArgument("--disable-dev-shm-usage");
+        _chromeOptions.AddArgument("--no-sandbox");
+        _chromeOptions.AddArgument("--log-level=3");
         _chromeOptions.AddArgument("--headless");
         driver = new ChromeDriver(_chromeOptions);
         driver.Navigate().GoToUrl("https://www.amazon.in/");
