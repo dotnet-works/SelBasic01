@@ -27,6 +27,10 @@ public class BaseTest{
     public void InitSetUp(){
         ExtentTestManager.CreateTest(TestContext.CurrentContext.Test.Name);
         
+        var user = Environment.GetEnvironmentVariable("TestUser");
+        Console.WriteLine(String.Format("CMD Pass User {0}",user));
+        
+
         // ChromeOptions _chromeOptions = new ChromeOptions();
         // _chromeOptions.AddArguments("--disable-dev-shm-usage");
         // _chromeOptions.AddArguments("--no-sandbox");
@@ -36,9 +40,9 @@ public class BaseTest{
 
         
         FirefoxOptions _ffOptions = new FirefoxOptions();
-        _ffOptions.AddArguments("--disable-dev-shm-usage");
-        _ffOptions.AddArguments("--no-sandbox");
-        _ffOptions.AddArguments("--log-level=3");
+        
+        _ffOptions.LogLevel = FirefoxDriverLogLevel.Fatal;
+        _ffOptions.SetLoggingPreference(LogType.Browser, LogLevel.Off); //.All);
         _ffOptions.AddArguments("--headless");
         driver = new FirefoxDriver(_ffOptions);
 
