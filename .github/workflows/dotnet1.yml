@@ -45,6 +45,5 @@ jobs:
       
       - name: Test with the dotnet CLI
         run: |
-         dotnet test --list-tests
          dotnet test --filter "FullyQualifiedName=SelBasic01.ExtentImpTests.TestSelenium1"
-        #  dotnet test --filter FullyQualifiedName~SelBasic01.ExtentImpTests
+      
