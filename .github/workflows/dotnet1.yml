@@ -33,15 +33,15 @@ jobs:
             ${{ runner.os }}-nuget
       
    
-      - name: Install dependencies
-        run: | 
-          dotnet add package Newtonsoft.Json
+      # - name: Install dependencies
+      #   run: | 
+      #     dotnet add package Newtonsoft.Json
       
-      - name: Install dependencies
-        run: dotnet restore
+      # - name: Install dependencies
+      #   run: dotnet restore
 
-      - name: Build
-        run: dotnet build
+      # - name: Build
+      #   run: dotnet build
       
       - name: Test with the dotnet CLI
         run: |
