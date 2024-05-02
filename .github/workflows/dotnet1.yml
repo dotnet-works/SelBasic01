@@ -20,9 +20,9 @@ jobs:
       - name: Display dotnet version
         run: dotnet --version
 
-      - uses: browser-actions/setup-chrome@latest
-      - name: Install Chrome
-        run:  chrome --version
+      # - uses: browser-actions/setup-chrome@latest
+      # - name: Install Chrome
+      #   run:  chrome --version
 
       - uses: actions/cache@v3
         with:
