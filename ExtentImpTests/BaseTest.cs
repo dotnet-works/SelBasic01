@@ -42,7 +42,7 @@ public class BaseTest{
         FirefoxOptions _ffOptions = new FirefoxOptions();
         
         _ffOptions.LogLevel = FirefoxDriverLogLevel.Fatal;
-        _ffOptions.SetLoggingPreference(LogType.Browser, LogLevel.Off); //.All);
+        _ffOptions.SetLoggingPreference(LogType.Driver, LogLevel.Off); //.All);
         _ffOptions.AddArguments("--headless");
         driver = new FirefoxDriver(_ffOptions);
 
