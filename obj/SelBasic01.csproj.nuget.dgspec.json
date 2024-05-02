@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\JenkinsGitDemo\\dotnet\\SelBasic01\\SelBasic01.csproj": {}
+    "e:\\JenkinsGitDemo\\dotnet\\SelBasic01\\SelBasic01.csproj": {}
   },
   "projects": {
-    "E:\\JenkinsGitDemo\\dotnet\\SelBasic01\\SelBasic01.csproj": {
+    "e:\\JenkinsGitDemo\\dotnet\\SelBasic01\\SelBasic01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\JenkinsGitDemo\\dotnet\\SelBasic01\\SelBasic01.csproj",
+        "projectUniqueName": "e:\\JenkinsGitDemo\\dotnet\\SelBasic01\\SelBasic01.csproj",
         "projectName": "SelBasic01",
-        "projectPath": "E:\\JenkinsGitDemo\\dotnet\\SelBasic01\\SelBasic01.csproj",
+        "projectPath": "e:\\JenkinsGitDemo\\dotnet\\SelBasic01\\SelBasic01.csproj",
         "packagesPath": "C:\\Users\\Arrav1\\.nuget\\packages\\",
-        "outputPath": "E:\\JenkinsGitDemo\\dotnet\\SelBasic01\\obj\\",
+        "outputPath": "e:\\JenkinsGitDemo\\dotnet\\SelBasic01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Arrav1\\AppData\\Roaming\\NuGet\\NuGet.Config"
