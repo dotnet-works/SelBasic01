@@ -28,7 +28,7 @@ public class BaseTest{
         _chromeOptions.AddArguments("--disable-dev-shm-usage");
         _chromeOptions.AddArguments("--no-sandbox");
         _chromeOptions.AddArguments("--log-level=3");
-        _chromeOptions.AddArguments("--headless");
+        // _chromeOptions.AddArguments("--headless");
         driver = new ChromeDriver(_chromeOptions);
         driver.Navigate().GoToUrl("https://www.amazon.in/");
         driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromMilliseconds(2500);
@@ -38,7 +38,7 @@ public class BaseTest{
 
     [TearDown]
     public void TestTearDown(){
-        driver.Close();
+        // driver.Quit();
         driver.Dispose();
     }
 }
