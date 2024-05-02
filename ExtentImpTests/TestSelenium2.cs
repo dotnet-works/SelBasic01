@@ -22,12 +22,5 @@ public class TestSelenium2 :BaseTest {
         Console.WriteLine("Hello Joy");
     }
 
-    [Test]
-    public void Test3(){
-        Console.WriteLine("Hello Mika");
-    }
-
-
-
-
+   
 }
