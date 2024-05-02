@@ -17,10 +17,6 @@ public class TestSelenium2 :BaseTest {
         Console.WriteLine(String.Format("Results Found: {0}",_totalResults));
     }
 
-    [Test]
-    public void Test2(){
-        Console.WriteLine("Hello Joy");
-    }
-
+   
    
 }

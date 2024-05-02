@@ -14,8 +14,9 @@ public class TestSelenium1 : BaseTest{
         driver.FindElement(By.Id("nav-search-submit-text")).Click();
         Thread.Sleep(5000);
         // // string _totalResults = driver.FindElement(By.CssSelector("div.a-section.a-spacing-small.a-spacing-top-small")).Text;
-        // string _totalResults = driver.FindElement(By.XPath("//span[@data-component-type='s-result-info-bar']/div/h1/div/div[1]")).Text;
-        // Console.WriteLine(String.Format("Results Found: {0}",_totalResults));
+        string _totalResults = driver.FindElement(By.XPath("//span[@data-component-type='s-result-info-bar']/div/h1/div/div[1]")).Text;
+        Console.WriteLine(String.Format("Results Found: {0}",_totalResults));
+        TestContext.Out.WriteLine(String.Format("Results Found: {0}",_totalResults));
     
     }
 
